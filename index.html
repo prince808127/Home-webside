@@ -1,0 +1,1746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prefab Modular Homes & Cottages in India | Max Searchs group</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --terra: #8B3A2A;
+  --rust: #C4623A;
+  --sand: #E8D5B0;
+  --warm: #F5EDD8;
+  --ivory: #FBF7F0;
+  --dark: #1C1410;
+  --brown: #3D2B1A;
+  --copper: #B87333;
+  --muted: #7A6A58;
+  --light: #EDE4D3;
+  --white: #FFFDF9;
+  --accent: #D4885A;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Outfit',sans-serif;background:var(--ivory);color:var(--dark);overflow-x:hidden;}
+
+/* =========== NAVBAR =========== */
+nav {
+  position:fixed;top:0;left:0;right:0;z-index:2000;
+  background:rgba(28,20,16,0.97);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(196,98,58,0.25);
+}
+
+.nav-top {
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 4%;height:68px;
+}
+
+.logo {
+  font-family:'DM Serif Display',serif;
+  font-size:1.6rem;color:#fff;letter-spacing:0.5px;
+  display:flex;align-items:center;gap:0.5rem;
+}
+.logo-dot{width:8px;height:8px;background:var(--rust);border-radius:50%;display:inline-block;}
+
+.nav-main{display:flex;gap:0;list-style:none;}
+
+.nav-item{position:relative;}
+.nav-item > a, .nav-item > span {
+  display:block;padding:0 1.1rem;height:68px;line-height:68px;
+  color:rgba(255,255,255,0.8);text-decoration:none;
+  font-size:0.78rem;letter-spacing:1.5px;text-transform:uppercase;font-weight:500;
+  cursor:pointer;transition:all 0.25s;white-space:nowrap;
+  border-bottom:2px solid transparent;
+}
+.nav-item:hover > a, .nav-item:hover > span {
+  color:#fff;border-bottom-color:var(--rust);
+}
+
+/* MEGA DROPDOWN */
+.mega-drop {
+  position:absolute;top:68px;left:-200px;
+  width:900px;background:#1a110a;
+  border-top:2px solid var(--rust);
+  box-shadow:0 30px 80px rgba(0,0,0,0.6);
+  opacity:0;visibility:hidden;transform:translateY(-10px);
+  transition:all 0.35s cubic-bezier(0.25,0.46,0.45,0.94);
+  display:grid;grid-template-columns:260px 1fr;
+}
+
+.nav-item:hover .mega-drop {
+  opacity:1;visibility:visible;transform:translateY(0);
+}
+
+.mega-links {
+  padding:2rem 0;border-right:1px solid rgba(196,98,58,0.15);
+}
+
+.mega-link {
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0.85rem 1.8rem;color:rgba(255,255,255,0.7);
+  text-decoration:none;font-size:0.82rem;font-weight:500;
+  letter-spacing:0.5px;cursor:pointer;
+  transition:all 0.2s;border-left:2px solid transparent;
+}
+.mega-link:hover,.mega-link.active {
+  color:#fff;background:rgba(196,98,58,0.12);
+  border-left-color:var(--rust);
+}
+.mega-link-tag {
+  font-size:0.6rem;letter-spacing:1px;text-transform:uppercase;
+  background:var(--rust);color:#fff;padding:2px 7px;border-radius:2px;
+}
+
+/* DESIGN SLIDER in mega */
+.mega-slider-wrap {
+  padding:1.5rem;position:relative;overflow:hidden;
+}
+
+.mega-slider-title {
+  color:rgba(255,255,255,0.4);font-size:0.65rem;
+  letter-spacing:2px;text-transform:uppercase;margin-bottom:1rem;font-weight:600;
+}
+
+.mega-slides {
+  display:flex;gap:0.75rem;
+  transition:transform 0.4s ease;
+  width:calc(3 * (180px + 0.75rem));
+}
+
+.mega-slide {
+  min-width:180px;height:140px;border-radius:4px;
+  position:relative;overflow:hidden;cursor:pointer;flex-shrink:0;
+}
+
+.mega-slide img {
+  width:100%;height:100%;object-fit:cover;
+  filter:brightness(0.75);transition:filter 0.3s;
+}
+.mega-slide:hover img{filter:brightness(1);}
+
+.mega-slide-overlay {
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(28,20,16,0.8) 0%,transparent 60%);
+  display:flex;align-items:flex-end;padding:0.6rem;
+}
+.mega-slide-overlay span {
+  color:#fff;font-size:0.72rem;font-weight:600;letter-spacing:0.5px;
+}
+
+.mega-slide-nav {
+  display:flex;gap:0.5rem;margin-top:1rem;
+}
+.msnav-btn {
+  width:28px;height:28px;border:1px solid rgba(196,98,58,0.4);
+  background:transparent;color:rgba(255,255,255,0.6);
+  cursor:pointer;display:flex;align-items:center;justify-content:center;
+  font-size:0.8rem;border-radius:2px;transition:all 0.2s;
+}
+.msnav-btn:hover{background:var(--rust);border-color:var(--rust);color:#fff;}
+
+.nav-right {
+  display:flex;align-items:center;gap:1rem;
+}
+
+.nav-phone {
+  color:var(--accent);font-size:0.75rem;font-weight:600;
+  letter-spacing:1px;text-decoration:none;
+}
+.nav-cta {
+  background:var(--rust);color:#fff;
+  padding:9px 22px;font-size:0.72rem;letter-spacing:1.5px;
+  text-transform:uppercase;font-weight:700;
+  border:none;cursor:pointer;text-decoration:none;
+  border-radius:2px;transition:all 0.3s;display:inline-block;
+}
+.nav-cta:hover{background:#a3502d;}
+
+/* =========== HERO SLIDER =========== */
+.hero {
+  height:100vh;min-height:600px;
+  position:relative;overflow:hidden;padding-top:68px;
+}
+
+.hero-slides {
+  display:flex;height:100%;
+  transition:transform 0.8s cubic-bezier(0.77,0,0.175,1);
+}
+
+.hero-slide {
+  min-width:100%;height:100%;
+  position:relative;display:flex;align-items:center;
+}
+
+/* Use Unsplash images for hero slides */
+.hs1 { background:url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1600&q=80') center/cover; }
+.hs2 { background:url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1600&q=80') center/cover; }
+.hs3 { background:url('https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1600&q=80') center/cover; }
+.hs4 { background:url('https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=1600&q=80') center/cover; }
+
+.hero-slide::before {
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(105deg,rgba(28,20,16,0.82) 0%,rgba(28,20,16,0.4) 60%,transparent 100%);
+}
+
+.hero-content {
+  position:relative;z-index:2;padding:0 8%;max-width:780px;
+}
+
+.hero-eyebrow {
+  display:inline-flex;align-items:center;gap:0.5rem;
+  background:rgba(196,98,58,0.2);border:1px solid rgba(196,98,58,0.5);
+  color:var(--accent);font-size:0.65rem;letter-spacing:3px;
+  text-transform:uppercase;padding:6px 14px;margin-bottom:1.5rem;
+  font-weight:600;border-radius:2px;
+  animation:fadeUp 1s ease both;
+}
+.hero-eyebrow::before{content:'';width:20px;height:1px;background:var(--rust);}
+
+.hero h1 {
+  font-family:'DM Serif Display',serif;
+  font-size:clamp(2.8rem,6vw,5.5rem);color:#fff;
+  line-height:1.05;font-weight:400;
+  animation:fadeUp 1s 0.15s ease both;
+}
+.hero h1 em{font-style:italic;color:var(--accent);}
+
+.hero-sub {
+  font-family:'DM Sans',sans-serif;
+  font-size:1rem;color:rgba(255,255,255,0.7);
+  margin:1.2rem 0 2rem;line-height:1.7;
+  animation:fadeUp 1s 0.3s ease both;
+  max-width:520px;
+}
+
+.hero-btns {
+  display:flex;gap:1rem;flex-wrap:wrap;
+  animation:fadeUp 1s 0.45s ease both;
+}
+
+.btn-fill {
+  background:var(--rust);color:#fff;padding:13px 32px;
+  font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;
+  font-weight:700;border:none;cursor:pointer;text-decoration:none;
+  display:inline-block;border-radius:2px;transition:all 0.3s;
+}
+.btn-fill:hover{background:#a3502d;transform:translateY(-2px);}
+
+.btn-ghost {
+  background:transparent;color:#fff;padding:13px 32px;
+  font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;
+  font-weight:500;border:1px solid rgba(255,255,255,0.35);
+  cursor:pointer;text-decoration:none;display:inline-block;
+  border-radius:2px;transition:all 0.3s;
+}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent);}
+
+/* Hero controls */
+.hero-controls {
+  position:absolute;bottom:2rem;right:6%;
+  display:flex;gap:0.5rem;z-index:3;
+}
+.hctrl {
+  width:44px;height:44px;background:rgba(255,255,255,0.1);
+  border:1px solid rgba(255,255,255,0.3);color:#fff;
+  cursor:pointer;display:flex;align-items:center;justify-content:center;
+  font-size:1rem;border-radius:2px;transition:all 0.3s;
+}
+.hctrl:hover{background:var(--rust);border-color:var(--rust);}
+
+.hero-dots {
+  position:absolute;bottom:2.5rem;left:8%;
+  display:flex;gap:0.5rem;z-index:3;
+}
+.hdot {
+  width:24px;height:3px;background:rgba(255,255,255,0.3);
+  cursor:pointer;border-radius:2px;transition:all 0.3s;
+}
+.hdot.active{background:var(--rust);width:48px;}
+
+.hero-slide-num {
+  position:absolute;right:6%;top:50%;transform:translateY(-50%);
+  z-index:3;
+}
+.hero-slide-num span {
+  display:block;color:rgba(255,255,255,0.4);
+  font-size:0.65rem;letter-spacing:3px;text-transform:uppercase;
+  font-weight:600;writing-mode:vertical-rl;
+}
+
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(28px);}
+  to{opacity:1;transform:translateY(0);}
+}
+
+/* =========== STATS =========== */
+.stats-bar {
+  background:var(--rust);
+  display:grid;grid-template-columns:repeat(3,1fr);
+}
+.stat-item {
+  padding:2.5rem 2rem;text-align:center;
+  border-right:1px solid rgba(255,255,255,0.15);position:relative;
+}
+.stat-item:last-child{border-right:none;}
+.stat-num {
+  font-family:'DM Serif Display',serif;
+  font-size:clamp(2.5rem,4vw,3.5rem);color:#fff;
+  line-height:1;display:block;
+}
+.stat-label {
+  color:rgba(255,255,255,0.7);font-size:0.72rem;
+  letter-spacing:2px;text-transform:uppercase;
+  margin-top:0.4rem;font-weight:500;
+}
+
+/* =========== SECTION STYLES =========== */
+.sec {padding:6rem 8%;}
+.sec-tag {
+  display:inline-block;color:var(--rust);
+  font-size:0.65rem;letter-spacing:3px;text-transform:uppercase;
+  font-weight:700;margin-bottom:0.8rem;
+  padding-left:2rem;position:relative;
+}
+.sec-tag::before {
+  content:'';position:absolute;left:0;top:50%;
+  width:24px;height:1px;background:var(--rust);
+}
+.sec-title {
+  font-family:'DM Serif Display',serif;
+  font-size:clamp(1.8rem,3.5vw,3rem);color:var(--dark);
+  font-weight:400;line-height:1.15;margin-bottom:1.2rem;
+}
+.sec-title.light{color:#fff;}
+.sec-body {
+  font-family:'DM Sans',sans-serif;
+  font-size:0.95rem;color:var(--muted);line-height:1.8;max-width:680px;
+}
+
+/* =========== INTRO 2-COL =========== */
+.intro {
+  background:var(--ivory);
+  display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;
+}
+.intro-imgs {
+  display:grid;grid-template-columns:1fr 1fr;gap:0.8rem;
+  position:relative;
+}
+.intro-img {
+  border-radius:6px;overflow:hidden;aspect-ratio:4/5;
+  position:relative;
+}
+.intro-img:first-child{margin-top:2rem;}
+.intro-img img{width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease;}
+.intro-img:hover img{transform:scale(1.04);}
+.intro-badge {
+  position:absolute;bottom:1.5rem;left:50%;transform:translateX(-50%);
+  background:var(--rust);color:#fff;
+  padding:1rem 1.5rem;text-align:center;
+  white-space:nowrap;border-radius:4px;box-shadow:0 8px 30px rgba(139,58,42,0.4);
+}
+.intro-badge strong{display:block;font-family:'DM Serif Display',serif;font-size:2rem;}
+.intro-badge span{font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;opacity:0.85;}
+
+/* =========== GALLERY ROW =========== */
+.gallery-strip {
+  background:var(--dark);
+  padding:0;overflow:hidden;
+}
+.gallery-row {
+  display:flex;height:360px;
+}
+.gallery-cell {
+  flex:1;position:relative;overflow:hidden;cursor:pointer;
+  transition:flex 0.5s ease;
+}
+.gallery-cell:hover{flex:2;}
+.gallery-cell img {
+  width:100%;height:100%;object-fit:cover;
+  filter:brightness(0.7);transition:filter 0.4s;
+}
+.gallery-cell:hover img{filter:brightness(0.9);}
+.gallery-cell-label {
+  position:absolute;bottom:1rem;left:1rem;
+  color:#fff;font-size:0.72rem;letter-spacing:1.5px;
+  text-transform:uppercase;font-weight:600;
+  opacity:0;transition:opacity 0.3s;
+}
+.gallery-cell:hover .gallery-cell-label{opacity:1;}
+
+/* =========== DESIGNS =========== */
+.designs{background:var(--white);}
+.designs-grid {
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2.5rem;
+}
+.dcard {
+  position:relative;overflow:hidden;border-radius:6px;
+  cursor:pointer;
+}
+.dcard-img {
+  aspect-ratio:4/3;overflow:hidden;
+}
+.dcard-img img {
+  width:100%;height:100%;object-fit:cover;
+  transition:transform 0.5s ease;
+}
+.dcard:hover .dcard-img img{transform:scale(1.06);}
+.dcard-overlay {
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(28,20,16,0.88) 0%,rgba(28,20,16,0.1) 55%,transparent 100%);
+  display:flex;align-items:flex-end;padding:1.5rem;
+}
+.dcard-tag {
+  display:inline-block;background:var(--rust);color:#fff;
+  font-size:0.6rem;letter-spacing:2px;text-transform:uppercase;
+  padding:3px 10px;font-weight:700;margin-bottom:0.5rem;border-radius:2px;
+}
+.dcard-title {
+  font-family:'DM Serif Display',serif;color:#fff;
+  font-size:1.25rem;display:block;
+}
+.dcard-sub {color:rgba(255,255,255,0.65);font-size:0.78rem;margin-top:0.2rem;}
+.dcard-info {display:flex;flex-direction:column;}
+
+/* =========== PHOTO GALLERY GRID =========== */
+.photo-section{background:var(--light);}
+.photo-masonry {
+  columns:3;column-gap:0.8rem;margin-top:2rem;
+}
+.photo-item {
+  break-inside:avoid;margin-bottom:0.8rem;
+  border-radius:5px;overflow:hidden;position:relative;
+  cursor:pointer;
+}
+.photo-item img {
+  width:100%;display:block;
+  filter:brightness(0.9);transition:all 0.4s;
+}
+.photo-item:hover img{filter:brightness(1);transform:scale(1.02);}
+.photo-item-cap {
+  position:absolute;bottom:0;left:0;right:0;
+  background:linear-gradient(transparent,rgba(28,20,16,0.7));
+  padding:1.5rem 0.8rem 0.8rem;
+  color:#fff;font-size:0.72rem;font-weight:600;letter-spacing:1px;
+  text-transform:uppercase;
+  opacity:0;transition:opacity 0.3s;
+}
+.photo-item:hover .photo-item-cap{opacity:1;}
+
+/* =========== ECOEASE =========== */
+.ecoease {
+  background:var(--brown);
+  display:grid;grid-template-columns:1fr 1fr;gap:0;
+}
+.ecoease-imgs {
+  position:relative;overflow:hidden;
+}
+.ecoease-imgs img {
+  width:100%;height:100%;object-fit:cover;
+}
+.ecoease-thumbs {
+  position:absolute;bottom:1.5rem;left:1.5rem;
+  display:flex;gap:0.6rem;
+}
+.eco-thumb {
+  width:60px;height:45px;border-radius:3px;overflow:hidden;
+  border:2px solid transparent;cursor:pointer;transition:border-color 0.2s;
+}
+.eco-thumb.active{border-color:var(--rust);}
+.eco-thumb img{width:100%;height:100%;object-fit:cover;}
+
+.ecoease-content {
+  padding:4rem;display:flex;flex-direction:column;justify-content:center;
+}
+.eco-list {list-style:none;margin-top:1.5rem;}
+.eco-list li {
+  padding:0.9rem 0;border-bottom:1px solid rgba(232,213,176,0.15);
+  font-size:0.85rem;color:rgba(255,255,255,0.8);
+  display:flex;gap:0.75rem;line-height:1.5;
+}
+.eco-list li::before{content:'✅';flex-shrink:0;}
+
+/* =========== WEATHER =========== */
+.weather {
+  background:var(--dark);text-align:center;padding:5rem 8%;
+}
+.weather-icons {
+  display:flex;justify-content:center;gap:3rem;
+  margin:2.5rem 0;flex-wrap:wrap;
+}
+.wi-box {
+  width:100px;height:100px;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:0.5rem;
+  border:1px solid rgba(196,98,58,0.3);border-radius:8px;
+  background:rgba(196,98,58,0.06);cursor:pointer;
+  transition:all 0.3s;
+}
+.wi-box:hover{background:rgba(196,98,58,0.18);transform:translateY(-4px);}
+.wi-box span:first-child{font-size:2.2rem;}
+.wi-box span:last-child{
+  font-size:0.62rem;letter-spacing:1.5px;text-transform:uppercase;
+  color:var(--accent);font-weight:600;
+}
+
+/* =========== FEATURES =========== */
+.features{background:var(--warm);}
+.features-grid {
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1px;background:var(--sand);margin-top:2.5rem;
+}
+.feat-card {
+  background:var(--ivory);padding:2.5rem 2rem;
+  position:relative;overflow:hidden;transition:all 0.3s;
+}
+.feat-card::after {
+  content:'';position:absolute;bottom:0;left:0;right:0;
+  height:2px;background:var(--rust);
+  transform:scaleX(0);transform-origin:left;transition:transform 0.35s;
+}
+.feat-card:hover::after{transform:scaleX(1);}
+.feat-card:hover{background:#fff;box-shadow:0 4px 20px rgba(139,58,42,0.08);}
+.feat-icon {
+  width:52px;height:52px;background:var(--sand);
+  border-radius:6px;display:flex;align-items:center;justify-content:center;
+  font-size:1.4rem;margin-bottom:1.2rem;
+}
+.feat-card h3 {
+  font-family:'DM Serif Display',serif;font-size:1.1rem;
+  color:var(--brown);margin-bottom:0.7rem;
+}
+.feat-card p{font-size:0.83rem;color:var(--muted);line-height:1.7;}
+
+/* =========== IMAGE STRIP with scroll =========== */
+.img-scroll-strip {
+  background:var(--dark);padding:2rem 0;overflow:hidden;
+}
+.img-strip-inner {
+  display:flex;gap:1rem;
+  animation:stripScroll 30s linear infinite;
+  width:max-content;
+}
+@keyframes stripScroll{
+  from{transform:translateX(0);}
+  to{transform:translateX(-50%);}
+}
+.strip-img {
+  width:260px;height:170px;flex-shrink:0;
+  border-radius:6px;overflow:hidden;
+}
+.strip-img img{width:100%;height:100%;object-fit:cover;filter:brightness(0.8);}
+
+/* =========== TECHNOLOGY =========== */
+.tech{background:var(--white);}
+.tech-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem;}
+.tech-card {
+  padding:2.5rem 2rem;border:1px solid var(--sand);
+  border-radius:6px;position:relative;overflow:hidden;
+  background:var(--ivory);
+}
+.tech-card-num {
+  font-family:'DM Serif Display',serif;
+  font-size:5rem;color:rgba(139,58,42,0.06);
+  position:absolute;top:-0.5rem;right:1rem;line-height:1;
+  font-style:italic;
+}
+.tech-card h3 {
+  font-family:'DM Serif Display',serif;font-size:1rem;
+  color:var(--brown);margin-bottom:0.8rem;letter-spacing:0.5px;
+  text-transform:uppercase;font-size:0.88rem;font-weight:400;
+  font-style:italic;
+}
+.tech-card p{font-size:0.84rem;color:var(--muted);line-height:1.7;}
+
+/* =========== PROJECT SHOWCASE =========== */
+.projects{background:var(--brown);}
+.projects-grid {
+  display:grid;grid-template-columns:1.5fr 1fr;
+  grid-template-rows:auto auto;gap:1rem;margin-top:2rem;
+}
+.proj-card {
+  position:relative;overflow:hidden;border-radius:6px;cursor:pointer;
+}
+.proj-card:first-child{grid-row:span 2;}
+.proj-card img{
+  width:100%;height:100%;object-fit:cover;
+  min-height:220px;transition:transform 0.5s ease;
+}
+.proj-card:hover img{transform:scale(1.05);}
+.proj-overlay {
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(28,20,16,0.8) 0%,transparent 60%);
+  display:flex;align-items:flex-end;padding:1.2rem;
+}
+.proj-overlay h3 {
+  font-family:'DM Serif Display',serif;color:#fff;
+  font-size:1.1rem;
+}
+.proj-overlay p{color:rgba(255,255,255,0.65);font-size:0.78rem;margin-top:0.2rem;}
+
+/* =========== PAYMENT =========== */
+.payment{background:var(--sand);}
+.pay-steps {
+  display:flex;gap:0;margin-top:2rem;
+}
+.pay-step {
+  flex:1;padding:2rem 1.5rem;
+  background:#fff;border:1px solid rgba(196,98,58,0.2);border-right:none;
+  transition:all 0.3s;cursor:default;text-align:center;
+}
+.pay-step:last-child{border-right:1px solid rgba(196,98,58,0.2);}
+.pay-step:hover{background:var(--rust);}
+.pay-step:hover .pnum,.pay-step:hover .plabel{color:#fff !important;}
+.pnum {
+  font-family:'DM Serif Display',serif;font-size:2.8rem;
+  color:var(--rust);line-height:1;display:block;transition:color 0.3s;
+}
+.plabel {
+  font-size:0.7rem;letter-spacing:1.5px;text-transform:uppercase;
+  color:var(--muted);margin-top:0.4rem;font-weight:600;
+  display:block;transition:color 0.3s;
+}
+
+/* =========== PARTNER =========== */
+.partner{background:var(--dark);}
+.partner-grid {
+  display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:2rem;
+}
+.pcard {
+  background:rgba(255,255,255,0.04);border:1px solid rgba(196,98,58,0.2);
+  border-radius:6px;padding:2rem;transition:all 0.3s;
+  display:flex;flex-direction:column;gap:1rem;
+}
+.pcard:hover{background:rgba(196,98,58,0.08);border-color:var(--rust);}
+.pcard-img {
+  height:140px;border-radius:4px;overflow:hidden;
+}
+.pcard-img img{width:100%;height:100%;object-fit:cover;filter:brightness(0.8);}
+.pcard h3{
+  font-family:'DM Serif Display',serif;color:#fff;
+  font-size:1.15rem;
+}
+.pcard p{color:rgba(255,255,255,0.6);font-size:0.83rem;line-height:1.7;}
+.link-accent {
+  color:var(--accent);text-decoration:none;
+  font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;
+  font-weight:700;display:inline-flex;align-items:center;gap:0.5rem;
+  border-bottom:1px solid rgba(196,98,58,0.3);padding-bottom:2px;
+  width:fit-content;transition:all 0.3s;
+}
+.link-accent:hover{border-color:var(--rust);color:var(--rust);}
+
+/* =========== FORM SECTIONS =========== */
+.forms-sec {
+  background:var(--light);
+  display:grid;grid-template-columns:1fr 1fr;gap:0;
+}
+.form-box {
+  padding:4rem;background:#fff;
+}
+.form-box-dark {
+  padding:4rem;background:var(--brown);
+}
+.form-box h2,.form-box-dark h2 {
+  font-family:'DM Serif Display',serif;font-size:1.8rem;
+  margin-bottom:1.5rem;
+}
+.form-box h2{color:var(--dark);}
+.form-box-dark h2{color:#fff;}
+.f-group {margin-bottom:1rem;}
+.f-group label {
+  display:block;font-size:0.68rem;letter-spacing:1.5px;
+  text-transform:uppercase;margin-bottom:0.4rem;font-weight:600;
+}
+.form-box .f-group label{color:var(--muted);}
+.form-box-dark .f-group label{color:rgba(255,255,255,0.5);}
+.f-group input,.f-group textarea,.f-group select {
+  width:100%;padding:10px 14px;font-family:'Outfit',sans-serif;
+  font-size:0.88rem;outline:none;border-radius:3px;
+  transition:border-color 0.3s;
+}
+.form-box .f-group input,.form-box .f-group textarea {
+  background:var(--warm);border:1px solid var(--sand);color:var(--dark);
+}
+.form-box .f-group input:focus,.form-box .f-group textarea:focus {
+  border-color:var(--rust);
+}
+.form-box-dark .f-group input,.form-box-dark .f-group textarea {
+  background:rgba(255,255,255,0.07);
+  border:1px solid rgba(196,98,58,0.25);color:#fff;
+}
+.form-box-dark .f-group input::placeholder,
+.form-box-dark .f-group textarea::placeholder{color:rgba(255,255,255,0.3);}
+.form-box-dark .f-group input:focus,.form-box-dark .f-group textarea:focus{
+  border-color:var(--accent);
+}
+.form-row-2{display:grid;grid-template-columns:1fr 1fr;gap:0.8rem;}
+
+/* =========== FAQ =========== */
+.faq{background:var(--ivory);}
+.faq-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:0 4rem;
+  margin-top:2rem;align-items:start;
+}
+.faq-item{border-bottom:1px solid var(--sand);overflow:hidden;}
+.faq-q {
+  padding:1.2rem 0;display:flex;justify-content:space-between;
+  align-items:center;cursor:pointer;
+  font-family:'DM Serif Display',serif;font-size:1rem;
+  color:var(--brown);gap:1rem;user-select:none;
+}
+.faq-q:hover{color:var(--rust);}
+.faq-icon {
+  width:26px;height:26px;background:var(--sand);color:var(--rust);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1rem;flex-shrink:0;border-radius:50%;
+  transition:all 0.3s;font-weight:300;
+}
+.faq-item.open .faq-icon{background:var(--rust);color:#fff;transform:rotate(45deg);}
+.faq-a {
+  max-height:0;overflow:hidden;transition:max-height 0.4s ease;
+  font-size:0.85rem;color:var(--muted);line-height:1.7;
+}
+.faq-item.open .faq-a{max-height:300px;padding-bottom:1.2rem;}
+
+/* =========== BLOG =========== */
+.blog{background:var(--white);}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2rem;}
+.bcard {
+  border-radius:6px;overflow:hidden;background:#fff;
+  border:1px solid var(--sand);transition:all 0.3s;
+  text-decoration:none;color:inherit;display:block;
+}
+.bcard:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(139,58,42,0.1);}
+.bcard-img{height:190px;overflow:hidden;position:relative;}
+.bcard-img img{width:100%;height:100%;object-fit:cover;transition:transform 0.4s;}
+.bcard:hover .bcard-img img{transform:scale(1.05);}
+.bcard-body{padding:1.4rem;}
+.bcard-cat {
+  font-size:0.6rem;letter-spacing:2px;text-transform:uppercase;
+  color:var(--rust);font-weight:700;margin-bottom:0.5rem;
+}
+.bcard-body h3{
+  font-family:'DM Serif Display',serif;font-size:0.95rem;
+  color:var(--dark);line-height:1.4;margin-bottom:0.6rem;
+}
+.bcard-body p{font-size:0.78rem;color:var(--muted);line-height:1.6;}
+
+/* =========== CITIES TICKER =========== */
+.cities-band {
+  background:var(--rust);padding:1rem 0;overflow:hidden;
+}
+.cities-inner {
+  display:flex;gap:2.5rem;animation:tickerScroll 25s linear infinite;
+  white-space:nowrap;
+}
+.cities-inner span {
+  font-size:0.68rem;letter-spacing:2.5px;text-transform:uppercase;
+  font-weight:700;color:rgba(255,255,255,0.9);flex-shrink:0;
+}
+@keyframes tickerScroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+/* =========== CONTACT =========== */
+.contact-sec {
+  background:var(--brown);
+  display:grid;grid-template-columns:1fr 1fr;gap:0;
+}
+.contact-info-col{padding:5rem 4rem;}
+.contact-info-col h2{
+  font-family:'DM Serif Display',serif;font-size:2.5rem;color:#fff;margin-bottom:2rem;
+}
+.cdetail {display:flex;gap:1rem;margin-bottom:1.5rem;align-items:flex-start;}
+.cicon {
+  width:42px;height:42px;background:rgba(196,98,58,0.2);
+  border:1px solid rgba(196,98,58,0.3);display:flex;
+  align-items:center;justify-content:center;font-size:1rem;
+  flex-shrink:0;border-radius:3px;
+}
+.cdetail small{display:block;color:rgba(255,255,255,0.4);font-size:0.65rem;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:0.2rem;}
+.cdetail p{color:rgba(255,255,255,0.85);font-size:0.88rem;line-height:1.5;}
+.cdetail a{color:var(--accent);text-decoration:none;}
+
+.contact-map-col {
+  position:relative;overflow:hidden;min-height:400px;
+}
+.contact-map-col img{width:100%;height:100%;object-fit:cover;filter:brightness(0.5) sepia(0.5);}
+.contact-map-overlay {
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  background:rgba(28,20,16,0.4);
+}
+.map-pin {
+  text-align:center;color:#fff;
+}
+.map-pin-icon{font-size:3rem;display:block;animation:bounce 2s infinite;}
+@keyframes bounce{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
+.map-pin p{font-size:0.8rem;letter-spacing:1px;margin-top:0.5rem;opacity:0.8;}
+
+/* =========== FOOTER =========== */
+footer {
+  background:var(--dark);color:rgba(255,255,255,0.55);
+  padding:4rem 8% 2rem;
+  border-top:1px solid rgba(196,98,58,0.15);
+}
+.footer-grid {
+  display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem;
+}
+.footer-logo {
+  font-family:'DM Serif Display',serif;font-size:1.5rem;
+  color:#fff;margin-bottom:1rem;display:block;
+}
+.footer-brand p{font-size:0.8rem;line-height:1.7;color:rgba(255,255,255,0.45);}
+.fsocial{display:flex;gap:0.6rem;margin-top:1.5rem;}
+.fsoc-btn {
+  width:34px;height:34px;background:rgba(196,98,58,0.1);
+  border:1px solid rgba(196,98,58,0.2);display:flex;
+  align-items:center;justify-content:center;font-size:0.85rem;
+  color:rgba(255,255,255,0.6);text-decoration:none;border-radius:3px;transition:all 0.3s;
+}
+.fsoc-btn:hover{background:var(--rust);border-color:var(--rust);color:#fff;}
+.fcol h4 {
+  color:rgba(255,255,255,0.85);font-size:0.68rem;letter-spacing:2px;
+  text-transform:uppercase;font-weight:700;margin-bottom:1.2rem;
+  padding-bottom:0.5rem;border-bottom:1px solid rgba(196,98,58,0.2);
+}
+.fcol ul{list-style:none;}
+.fcol li{margin-bottom:0.55rem;}
+.fcol a{color:rgba(255,255,255,0.45);text-decoration:none;font-size:0.8rem;transition:color 0.3s;}
+.fcol a:hover{color:var(--accent);}
+.footer-bottom {
+  border-top:1px solid rgba(255,255,255,0.07);padding-top:1.8rem;
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:0.75rem;flex-wrap:wrap;gap:0.8rem;
+}
+.footer-bottom a{color:var(--accent);text-decoration:none;}
+
+/* =========== KEY HIGHLIGHTS GRID =========== */
+.highlights{background:var(--warm);}
+.hl-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);
+  gap:1px;background:var(--sand);margin-top:2rem;
+}
+.hl-item {
+  background:var(--ivory);padding:1.4rem 2rem;
+  display:flex;gap:1rem;align-items:center;transition:background 0.2s;
+}
+.hl-item:hover{background:#fff;}
+.hl-check{color:var(--rust);font-size:1.2rem;flex-shrink:0;}
+.hl-text{font-size:0.87rem;color:var(--brown);font-weight:500;}
+
+/* =========== RESPONSIVE =========== */
+@media(max-width:1024px){
+  .mega-drop{width:700px;}
+}
+@media(max-width:900px){
+  .stats-bar,.designs-grid,.features-grid,.tech-grid,.blog-grid,
+  .faq-grid,.footer-grid,.partner-grid,.hl-grid{grid-template-columns:1fr 1fr !important;}
+  .intro,.ecoease,.forms-sec,.contact-sec{grid-template-columns:1fr !important;}
+  .nav-main,.mega-drop{display:none;}
+  .gallery-row{height:220px;}
+  .photo-masonry{columns:2;}
+  .projects-grid{grid-template-columns:1fr;}
+  .projects-grid .proj-card:first-child{grid-row:span 1;}
+  .pay-steps{flex-direction:column;}
+  .pay-step{border-right:1px solid rgba(196,98,58,0.2) !important;border-bottom:none;}
+}
+@media(max-width:600px){
+  .designs-grid,.features-grid,.tech-grid,.blog-grid,
+  .faq-grid,.footer-grid,.partner-grid,.hl-grid{grid-template-columns:1fr !important;}
+  .photo-masonry{columns:1;}
+  .gallery-row{flex-direction:column;height:auto;}
+  .gallery-cell{height:200px;}
+}
+</style>
+</head>
+<body>
+
+<!-- ====== NAV ====== -->
+<nav>
+  <div class="nav-top">
+    <div class="logo"><div class="logo-dot"></div>Max Searchs group</div>
+
+    <ul class="nav-main">
+      <li class="nav-item"><a href="#">Home</a></li>
+      <li class="nav-item"><a href="#">About Us</a></li>
+
+      <!-- DESIGNS with MEGA DROPDOWN + SLIDER -->
+      <li class="nav-item">
+        <span>Designs ▾</span>
+        <div class="mega-drop">
+          <div class="mega-links">
+            <a href="#" class="mega-link active" data-slide="0">1 BHK Designs <span class="mega-link-tag">From ₹11.8L</span></a>
+            <a href="#" class="mega-link" data-slide="1">2 BHK Designs <span class="mega-link-tag">From ₹23L</span></a>
+            <a href="#" class="mega-link" data-slide="2">3/4 BHK Designs <span class="mega-link-tag">From ₹41L</span></a>
+            <a href="#" class="mega-link" data-slide="3">Studio Cottages</a>
+            <a href="#" class="mega-link" data-slide="4">Single Room Designs</a>
+            <a href="#" class="mega-link" data-slide="5">EcoEase Cabins <span class="mega-link-tag">New</span></a>
+            <a href="#" class="mega-link" data-slide="6">Bathroom Pods</a>
+            <a href="#" class="mega-link" data-slide="7">Wooden Home Cottages</a>
+          </div>
+          <div class="mega-slider-wrap">
+            <div class="mega-slider-title">Design Preview</div>
+            <div style="overflow:hidden;border-radius:5px;">
+              <div class="mega-slides" id="megaSlides">
+                <div class="mega-slide">
+                  <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&q=75" alt="1BHK">
+                  <div class="mega-slide-overlay"><span>1 BHK Design</span></div>
+                </div>
+                <div class="mega-slide">
+                  <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=400&q=75" alt="2BHK">
+                  <div class="mega-slide-overlay"><span>2 BHK A-Frame</span></div>
+                </div>
+                <div class="mega-slide">
+                  <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=400&q=75" alt="3BHK">
+                  <div class="mega-slide-overlay"><span>3 BHK Villa</span></div>
+                </div>
+                <div class="mega-slide">
+                  <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&q=75" alt="Studio">
+                  <div class="mega-slide-overlay"><span>Studio Cottage</span></div>
+                </div>
+                <div class="mega-slide">
+                  <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=75" alt="Single">
+                  <div class="mega-slide-overlay"><span>Single Room Pod</span></div>
+                </div>
+                <div class="mega-slide">
+                  <img src="https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=400&q=75" alt="Eco">
+                  <div class="mega-slide-overlay"><span>EcoEase Cabin</span></div>
+                </div>
+                <div class="mega-slide">
+                  <img src="https://images.unsplash.com/photo-1584622781564-1d987f7333c1?w=400&q=75" alt="Bath">
+                  <div class="mega-slide-overlay"><span>Bathroom Pod</span></div>
+                </div>
+                <div class="mega-slide">
+                  <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=400&q=75" alt="Wooden">
+                  <div class="mega-slide-overlay"><span>Wooden Cottage</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="mega-slide-nav">
+              <button class="msnav-btn" id="msPrev">◀</button>
+              <button class="msnav-btn" id="msNext">▶</button>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li class="nav-item"><a href="#">Projects</a></li>
+      <li class="nav-item"><a href="#">Partner With Us</a></li>
+      <li class="nav-item"><a href="#">Blogs</a></li>
+      <li class="nav-item"><a href="#">Events</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <a class="nav-phone" href="tel:+919318381209">📞 +91 9318381209</a>
+      <a href="#contact" class="nav-cta">Contact Us</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ====== HERO SLIDER ====== -->
+<section class="hero" id="heroSection">
+  <div class="hero-slides" id="heroSlides">
+    <div class="hero-slide hs1">
+      <div class="hero-content">
+        <div class="hero-eyebrow">India's Leading Prefab Modular Homes</div>
+        <h1>Luxury.<br><em>Built Faster.</em></h1>
+        <p class="hero-sub">Prefab Modular Homes by Max Searchs group — No Civil Work. No Delays. No Headache.</p>
+        <div class="hero-btns">
+          <a href="#designs" class="btn-fill">Explore Designs</a>
+          <a href="#contact" class="btn-ghost">Request a Call Back</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slide hs2">
+      <div class="hero-content">
+        <div class="hero-eyebrow">600+ Homes Delivered Across India</div>
+        <h1>Modular Homes<br><em>for Every Terrain.</em></h1>
+        <p class="hero-sub">From the beaches of Goa to the hills of Shimla — Max Searchs group prefab homes are engineered for India.</p>
+        <div class="hero-btns">
+          <a href="#designs" class="btn-fill">View Designs</a>
+          <a href="#contact" class="btn-ghost">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slide hs3">
+      <div class="hero-content">
+        <div class="hero-eyebrow">20 Year Warranty • 50+ Year Lifespan</div>
+        <h1>Built to Last.<br><em>Ready in Weeks.</em></h1>
+        <p class="hero-sub">Our factory-made modular cottages are ready to install in just 45–90 days — with a 20-year structural warranty.</p>
+        <div class="hero-btns">
+          <a href="#" class="btn-fill">Download Catalog</a>
+          <a href="#contact" class="btn-ghost">Talk to Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slide hs4">
+      <div class="hero-content">
+        <div class="hero-eyebrow">EcoEase — Starting ₹8 Lakhs</div>
+        <h1>Affordable<br><em>Resort Cabins.</em></h1>
+        <p class="hero-sub">320 sq.ft fully built resort units. Zero civil work. Setup in just 2 days on site.</p>
+        <div class="hero-btns">
+          <a href="#ecoease" class="btn-fill">Know More</a>
+          <a href="#contact" class="btn-ghost">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-dots" id="heroDots">
+    <div class="hdot active" onclick="goSlide(0)"></div>
+    <div class="hdot" onclick="goSlide(1)"></div>
+    <div class="hdot" onclick="goSlide(2)"></div>
+    <div class="hdot" onclick="goSlide(3)"></div>
+  </div>
+
+  <div class="hero-controls">
+    <button class="hctrl" id="hPrev">◀</button>
+    <button class="hctrl" id="hNext">▶</button>
+  </div>
+</section>
+
+<!-- ====== STATS ====== -->
+<div class="stats-bar">
+  <div class="stat-item">
+    <span class="stat-num">600+</span>
+    <p class="stat-label">Homes & Cottages Delivered</p>
+  </div>
+  <div class="stat-item">
+    <span class="stat-num">3,50,000+</span>
+    <p class="stat-label">Sq Ft Manufactured & Assembled</p>
+  </div>
+  <div class="stat-item">
+    <span class="stat-num">50+</span>
+    <p class="stat-label">Cities in India Covered</p>
+  </div>
+</div>
+
+<!-- ====== INTRO ====== -->
+<section class="intro sec">
+  <div class="intro-imgs">
+    <div class="intro-img">
+      <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80" alt="Loom Crafts Home">
+    </div>
+    <div class="intro-img">
+      <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&q=80" alt="Loom Crafts Cottage">
+      <div class="intro-badge">
+        <strong>50+</strong>
+        <span>Years Design Life</span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <span class="sec-tag">Welcome to Max Searchs group</span>
+    <h2 class="sec-title">Prefab Modular Homes</h2>
+    <p class="sec-body">Welcome to Max Searchs group, the leading provider of luxury prefab modular homes in India. Our modular prefab homes are crafted with precision and care, using premium materials to ensure durability and elegance. Each home is custom-designed to meet your unique preferences, offering a stylish, sustainable, and environmentally friendly living experience.</p>
+    <p class="sec-body" style="margin-top:1rem;">At Max Searchs group, we pride ourselves on innovation and quality, redefining modern living with state-of-the-art modular solutions. Explore our <strong>1BHK, 2BHK, 3&4BHK, Studios</strong> and <strong>Single Room / Glamping Pods</strong>.</p>
+    <a href="#designs" class="btn-fill" style="margin-top:2rem;display:inline-block;">View All Designs</a>
+  </div>
+</section>
+
+<!-- ====== GALLERY STRIP ====== -->
+<div class="gallery-strip">
+  <div class="gallery-row">
+    <div class="gallery-cell">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=75" alt="1BHK">
+      <div class="gallery-cell-label">1 BHK Design</div>
+    </div>
+    <div class="gallery-cell">
+      <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&q=75" alt="2BHK">
+      <div class="gallery-cell-label">2 BHK A-Frame</div>
+    </div>
+    <div class="gallery-cell">
+      <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&q=75" alt="Studio">
+      <div class="gallery-cell-label">Studio Cottage</div>
+    </div>
+    <div class="gallery-cell">
+      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=75" alt="Mountain">
+      <div class="gallery-cell-label">Mountain Home</div>
+    </div>
+    <div class="gallery-cell">
+      <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=600&q=75" alt="Wooden">
+      <div class="gallery-cell-label">Wooden Cottage</div>
+    </div>
+  </div>
+</div>
+
+<!-- ====== DESIGNS ====== -->
+<section class="designs sec" id="designs">
+  <span class="sec-tag">Our Collection</span>
+  <h2 class="sec-title">Design Collections</h2>
+  <div class="designs-grid">
+    <div class="dcard">
+      <div class="dcard-img">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&q=80" alt="1BHK">
+      </div>
+      <div class="dcard-overlay">
+        <div class="dcard-info">
+          <span class="dcard-tag">Starting ₹11.8 Lakh</span>
+          <span class="dcard-title">1 BHK Designs</span>
+          <span class="dcard-sub">Compact luxury modular living</span>
+        </div>
+      </div>
+    </div>
+    <div class="dcard">
+      <div class="dcard-img">
+        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=700&q=80" alt="2BHK">
+      </div>
+      <div class="dcard-overlay">
+        <div class="dcard-info">
+          <span class="dcard-tag">Starting ₹23 Lakh</span>
+          <span class="dcard-title">2 BHK Designs</span>
+          <span class="dcard-sub">Perfect family modular homes</span>
+        </div>
+      </div>
+    </div>
+    <div class="dcard">
+      <div class="dcard-img">
+        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=700&q=80" alt="3BHK">
+      </div>
+      <div class="dcard-overlay">
+        <div class="dcard-info">
+          <span class="dcard-tag">Starting ₹41 Lakh</span>
+          <span class="dcard-title">3/4 BHK Designs</span>
+          <span class="dcard-sub">Spacious luxury villas</span>
+        </div>
+      </div>
+    </div>
+    <div class="dcard">
+      <div class="dcard-img">
+        <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=700&q=80" alt="Studio">
+      </div>
+      <div class="dcard-overlay">
+        <div class="dcard-info">
+          <span class="dcard-tag">Starting ₹10 Lakh</span>
+          <span class="dcard-title">Studio Cottages</span>
+          <span class="dcard-sub">Modern minimalist stays</span>
+        </div>
+      </div>
+    </div>
+    <div class="dcard">
+      <div class="dcard-img">
+        <img src="https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=700&q=80" alt="Single">
+      </div>
+      <div class="dcard-overlay">
+        <div class="dcard-info">
+          <span class="dcard-tag">Starting ₹7.25 Lakh</span>
+          <span class="dcard-title">Single Room Cottages</span>
+          <span class="dcard-sub">Glamping pods & cabins</span>
+        </div>
+      </div>
+    </div>
+    <div class="dcard">
+      <div class="dcard-img">
+        <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=700&q=80" alt="Wooden">
+      </div>
+      <div class="dcard-overlay">
+        <div class="dcard-info">
+          <span class="dcard-tag">Starting ₹8 Lakh</span>
+          <span class="dcard-title">EcoEase Affordable Cabins</span>
+          <span class="dcard-sub">320 sq.ft resort units</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== PHOTO MASONRY GALLERY ====== -->
+<section class="photo-section sec">
+  <span class="sec-tag">Our Work</span>
+  <h2 class="sec-title">Project Highlights</h2>
+  <div class="photo-masonry">
+    <div class="photo-item">
+      <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80" alt="">
+      <div class="photo-item-cap">Modern Modular Home</div>
+    </div>
+    <div class="photo-item">
+      <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&q=80" alt="">
+      <div class="photo-item-cap">Prefab Structure</div>
+    </div>
+    <div class="photo-item">
+      <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=600&q=80" alt="">
+      <div class="photo-item-cap">Forest Cottage</div>
+    </div>
+    <div class="photo-item">
+      <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&q=80" alt="">
+      <div class="photo-item-cap">Studio Retreat</div>
+    </div>
+    <div class="photo-item">
+      <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&q=80" alt="">
+      <div class="photo-item-cap">Interior Design</div>
+    </div>
+    <div class="photo-item">
+      <img src="https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=600&q=80" alt="">
+      <div class="photo-item-cap">Outdoor Living</div>
+    </div>
+    <div class="photo-item">
+      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="">
+      <div class="photo-item-cap">Mountain Escape</div>
+    </div>
+    <div class="photo-item">
+      <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=600&q=80" alt="">
+      <div class="photo-item-cap">Wooden Cottage</div>
+    </div>
+    <div class="photo-item">
+      <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&q=80" alt="">
+      <div class="photo-item-cap">Luxury Interior</div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== ECOEASE ====== -->
+<section class="ecoease" id="ecoease">
+  <div class="ecoease-imgs">
+    <img id="ecoMainImg" src="https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=800&q=80" alt="EcoEase Cabin">
+    <div class="ecoease-thumbs">
+      <div class="eco-thumb active" onclick="switchEco(this,'https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=800&q=80')">
+        <img src="https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=200&q=60" alt="">
+      </div>
+      <div class="eco-thumb" onclick="switchEco(this,'https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=800&q=80')">
+        <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=200&q=60" alt="">
+      </div>
+      <div class="eco-thumb" onclick="switchEco(this,'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&q=80')">
+        <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=200&q=60" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="ecoease-content">
+    <span class="sec-tag" style="color:var(--accent)">EcoEase by Max Searchs group</span>
+    <h2 class="sec-title light">Launching Our Most Affordable Resort Cabin Yet – EcoEase!</h2>
+    <p style="color:rgba(255,255,255,0.65);font-size:0.88rem;line-height:1.7;">We're proud to unveil the EcoEase Cabin – a 320 sq. ft. fully built resort unit designed for fast, efficient, and stylish hospitality development.</p>
+    <ul class="eco-list">
+      <li>Starts at just ₹8 Lakhs (GST & transport extra) – for the bare shell unit without furniture or appliances.</li>
+      <li>₹10 Lakhs (GST & transport extra) – for a completely ready-to-use cabin, including furniture, fixtures, and in-room amenities.</li>
+      <li>ZERO civil work needed – No plinth required! We install directly on precast RCC blocks.</li>
+      <li>Delivered ready-to-install. Setup in just 2 days on site.</li>
+      <li>Ideal for resorts, retreats, glamping sites, and homestay projects.</li>
+    </ul>
+    <p style="color:var(--accent);font-family:'DM Serif Display',serif;font-size:1.1rem;margin-top:1.5rem;font-style:italic;">ECO ON BUDGET – EASY ON SITE</p>
+    <!-- <a href="#" class="btn-fill" style="margin-top:1.5rem;display:inline-block;">Download EcoEase Catalog</a> -->
+  </div>
+</section>
+
+<!-- ====== WEATHER ====== -->
+<section class="weather">
+  <span class="sec-tag" style="color:var(--accent)">Built For India</span>
+  <h2 class="sec-title light" style="text-align:center;">All-Weather Protection</h2>
+  <div class="weather-icons">
+    <div class="wi-box"><span>☀️</span><span>Heavy Sun</span></div>
+    <div class="wi-box"><span>💨</span><span>180 Km/h Winds</span></div>
+    <div class="wi-box"><span>🌧️</span><span>Heavy Rain</span></div>
+    <div class="wi-box"><span>❄️</span><span>2 ft Snow</span></div>
+    <div class="wi-box"><span>🌊</span><span>Coastal Proof</span></div>
+  </div>
+  <p style="color:rgba(255,255,255,0.65);font-family:'DM Sans',sans-serif;font-size:0.92rem;max-width:800px;margin:0 auto;line-height:1.8;text-align:center;">
+    All our cottages and homes are protected against any weather conditions. Our standard design can withstand heavy sun, winds up to 180 Km/h, heavy rainfall and snow load up to 2 ft. The entire external surface is protected by weather proof membranes which makes it durable for years. With regular maintenance, the design life is <strong style="color:var(--accent);">50+ years</strong>.
+  </p>
+  <p style="margin-top:1.5rem;color:rgba(255,255,255,0.35);font-size:0.78rem;text-align:center;font-style:italic;max-width:700px;margin-left:auto;margin-right:auto;">Please note, we are not manufacturers of low cost homes and specialise in the luxury segment only. Our homes & cottages can be compared with good quality European wooden cottages which are even more expensive than us and have less durability than ours.</p>
+</section>
+
+<!-- ====== HIGHLIGHTS ====== -->
+<section class="highlights sec">
+  <span class="sec-tag">Why Choose Us</span>
+  <h2 class="sec-title">What Makes Max Searchs group Different</h2>
+  <div class="hl-grid">
+    <div class="hl-item"><span class="hl-check">✓</span><span class="hl-text">Delivered complete – ready to use</span></div>
+    <div class="hl-item"><span class="hl-check">✓</span><span class="hl-text">Ultimate in zero maintenance construction</span></div>
+    <div class="hl-item"><span class="hl-check">✓</span><span class="hl-text">50+ year economic lifespan</span></div>
+    <div class="hl-item"><span class="hl-check">✓</span><span class="hl-text">Stylish, contemporary & innovative design</span></div>
+    <div class="hl-item"><span class="hl-check">✓</span><span class="hl-text">Outstanding insulation for year-round thermal comfort</span></div>
+    <div class="hl-item"><span class="hl-check">✓</span><span class="hl-text">Sustainable & environmentally friendly build</span></div>
+    <div class="hl-item"><span class="hl-check">✓</span><span class="hl-text">20 year warranty (Structure & Leakage due to rains)</span></div>
+    <div class="hl-item"><span class="hl-check">✓</span><span class="hl-text">Moveable / transportable structures</span></div>
+    <div class="hl-item"><span class="hl-check">✓</span><span class="hl-text">Can be legally classed as 'temporary' (depending on the model)</span></div>
+    <div class="hl-item"><span class="hl-check">✓</span><span class="hl-text">Fully recyclable at the end of its lifetime</span></div>
+  </div>
+</section>
+
+<!-- ====== FEATURES ====== -->
+<section class="features sec">
+  <span class="sec-tag">Why Choose Prefab</span>
+  <h2 class="sec-title">Features & Benefits</h2>
+  <div class="features-grid">
+    <div class="feat-card">
+      <div class="feat-icon">⏱️</div>
+      <h3>Time-Effectiveness</h3>
+      <p>80%–90% of the construction is completed inside a factory, which mitigates the risk of weather delays, allowing projects to be completed in half the time of traditional construction.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">💰</div>
+      <h3>Cost-Effectiveness</h3>
+      <p>Because construction of modular buildings can occur simultaneously with the site and foundation work, projects are more cost-effective than traditional construction.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">🔄</div>
+      <h3>Flexibility</h3>
+      <p>Flexibility and relocatability of modular components add to the cost-effectiveness over time. Their durable, secure and relocatable characteristics make them ideal for both temporary and permanent applications.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">🏆</div>
+      <h3>Quality</h3>
+      <p>Max Searchs group utilizes state-of-the-art facilities that integrate best practices in design and workflow. Modular buildings are required to meet the same building codes as traditional construction.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">🌿</div>
+      <h3>Sustainability</h3>
+      <p>The fully controlled fabrication process inside the factory generates less waste, creates fewer site disturbances and allows for tighter construction.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">🛡️</div>
+      <h3>Risk Reduction</h3>
+      <p>The indoor construction environment reduces the risks of accidents and related liabilities for workers, ensuring a safer construction process.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ====== SCROLLING IMAGE STRIP ====== -->
+<div class="img-scroll-strip">
+  <div class="img-strip-inner">
+    <div class="strip-img"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&q=70" alt=""></div>
+    <div class="strip-img"><img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=400&q=70" alt=""></div>
+    <div class="strip-img"><img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=400&q=70" alt=""></div>
+    <div class="strip-img"><img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&q=70" alt=""></div>
+    <div class="strip-img"><img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=400&q=70" alt=""></div>
+    <div class="strip-img"><img src="https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=400&q=70" alt=""></div>
+    <div class="strip-img"><img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=400&q=70" alt=""></div>
+    <div class="strip-img"><img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&q=70" alt=""></div>
+    <!-- duplicate -->
+    <div class="strip-img"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&q=70" alt=""></div>
+    <div class="strip-img"><img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=400&q=70" alt=""></div>
+    <div class="strip-img"><img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=400&q=70" alt=""></div>
+    <div class="strip-img"><img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&q=70" alt=""></div>
+    <div class="strip-img"><img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=400&q=70" alt=""></div>
+    <div class="strip-img"><img src="https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=400&q=70" alt=""></div>
+    <div class="strip-img"><img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=400&q=70" alt=""></div>
+    <div class="strip-img"><img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&q=70" alt=""></div>
+  </div>
+</div>
+
+<!-- ====== TECHNOLOGY ====== -->
+<section class="tech sec">
+  <span class="sec-tag">Innovation</span>
+  <h2 class="sec-title">Technology & Design</h2>
+  <div class="tech-grid">
+    <div class="tech-card">
+      <div class="tech-card-num">01</div>
+      <h3>Building Systems</h3>
+      <p>Max Searchs group uses the best dry technologies, already tested and available on the market, to design modular buildings with standard components. The structural components of the floor, wall and roof are totally prefabricated by Max Searchs group as we are experts in the processing, with numerically controlled machines, and assembly of the materials.</p>
+    </div>
+    <div class="tech-card">
+      <div class="tech-card-num">02</div>
+      <h3>The Building's Configuration</h3>
+      <p>Max Searchs group promotes modularity in the construction sector: buildings will be no longer designed, but configured with standard components, that are produced in the factory. The shape, the function and every surface, internal and external, are customizable: there are no limits to the imagination!</p>
+    </div>
+    <div class="tech-card">
+      <div class="tech-card-num">03</div>
+      <h3>Product Distribution</h3>
+      <p>Any prefab component is delivered directly to the construction site and installed rapidly; thanks to an error-proof joint systems and mechanical fastenings. It is essential to involve any specialized actor, in order to guarantee environmentally friendly products, quick mounting, design and high quality buildings.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ====== PROJECT SHOWCASE ====== -->
+<section class="projects sec">
+  <span class="sec-tag" style="color:var(--accent)">Delivered Projects</span>
+  <h2 class="sec-title light">Projects Across India</h2>
+  <div class="projects-grid">
+    <div class="proj-card">
+      <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80" alt="Project 1">
+      <div class="proj-overlay">
+        <div>
+          <h3>4BHK Double A-Frame Cottage</h3>
+          <p>Nagpur, Maharashtra</p>
+        </div>
+      </div>
+    </div>
+    <div class="proj-card">
+      <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&q=80" alt="Project 2">
+      <div class="proj-overlay">
+        <div>
+          <h3>2BHK Modular Home</h3>
+          <p>Goa, India</p>
+        </div>
+      </div>
+    </div>
+    <div class="proj-card">
+      <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&q=80" alt="Project 3">
+      <div class="proj-overlay">
+        <div>
+          <h3>Resort Glamping Pods</h3>
+          <p>Shimla, Himachal Pradesh</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== PAYMENT ====== -->
+<section class="sec" style="background:var(--sand)">
+  <span class="sec-tag">Smart Payment</span>
+  <h2 class="sec-title">Milestone Based Smart Payment Plan</h2>
+  <p class="sec-body">Own your luxury prefab villa with a structured, construction-linked payment schedule. Production begins only after 75% payment — ensuring complete transparency and professional execution. No heavy upfront burden. No compromise on quality.</p>
+  <div class="pay-steps" style="margin-top:2rem;">
+    <div class="pay-step"><span class="pnum">25%</span><span class="plabel">At Booking</span></div>
+    <div class="pay-step"><span class="pnum">25%</span><span class="plabel">After 30 Days</span></div>
+    <div class="pay-step"><span class="pnum">25%</span><span class="plabel">Before Production</span></div>
+    <div class="pay-step"><span class="pnum">25%</span><span class="plabel">Before Dispatch</span></div>
+  </div>
+</section>
+
+<!-- ====== REQUEST + CONTACT FORM ====== -->
+<div class="forms-sec">
+  <div class="form-box">
+    <h2>Request a Call Back!</h2>
+    <div class="f-group"><label>Full Name *</label><input type="text" placeholder="Your full name"></div>
+    <div class="f-group"><label>Email *</label><input type="email" placeholder="your@email.com"></div>
+    <div class="f-group"><label>Phone *</label><input type="tel" placeholder="+91 00000 00000"></div>
+    <div class="f-group"><label>City *</label><input type="text" placeholder="Your city"></div>
+    <div class="f-group" style="display:flex;gap:0.5rem;align-items:center;font-size:0.82rem;color:var(--muted);">
+      <input type="checkbox" style="width:auto;">
+      Yes, contact me as per my details mentioned above
+    </div>
+    <button class="btn-fill" style="width:100%;margin-top:1rem;cursor:pointer;">Submit</button>
+  </div>
+  <div class="form-box-dark">
+    <h2>Send Us a Message</h2>
+    <div class="form-row-2">
+      <div class="f-group"><label>First Name *</label><input type="text" placeholder="First name"></div>
+      <div class="f-group"><label>Last Name *</label><input type="text" placeholder="Last name"></div>
+    </div>
+    <div class="f-group"><label>Phone *</label><input type="tel" placeholder="+91 00000 00000"></div>
+    <div class="f-group"><label>Email *</label><input type="email" placeholder="your@email.com"></div>
+    <div class="f-group"><label>City, State *</label><input type="text" placeholder="City & state"></div>
+    <div class="f-group"><label>Message *</label><textarea rows="3" placeholder="Write a message..."></textarea></div>
+    <button class="btn-fill" style="width:100%;cursor:pointer;">Submit Message</button>
+  </div>
+</div>
+
+<!-- ====== PARTNER ====== -->
+<section class="partner sec">
+  <span class="sec-tag" style="color:var(--accent)">Grow With Us</span>
+  <h2 class="sec-title light">Partner with Max Searchs group</h2>
+  <p style="color:rgba(255,255,255,0.55);font-size:0.88rem;max-width:700px;line-height:1.7;margin-bottom:2rem;">At Max Searchs group, we are transforming the way India builds with our innovative modular prefab homes and cottages, trusted by leading hospitality brands and resort developers nationwide. We invite passionate entrepreneurs, businesses, and real estate professionals to become our franchise partners.</p>
+  <div class="partner-grid">
+    <div class="pcard">
+      <div class="pcard-img"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=75" alt="Resort"></div>
+      <h3>Resort Development Services</h3>
+      <p>Want to build your own resort? We'll take care of everything—from design to handover. We transform your glamorous natural location into an attractive tourism destination and guide you from start to finish.</p>
+      <a href="#" class="link-accent">More Information →</a>
+    </div>
+    <div class="pcard">
+      <div class="pcard-img"><img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=75" alt="Real Estate"></div>
+      <h3>Partner With Us – Real Estate Developers</h3>
+      <p>We are inviting visionary real estate developers and builders who are into the development of farmhouses, holiday homes, and weekend retreats to collaborate with Max Searchs group, India's leading name in prefab modular homes.</p>
+      <a href="#" class="link-accent">More Information →</a>
+    </div>
+    <div class="pcard">
+      <div class="pcard-img"><img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=600&q=75" alt="Franchise"></div>
+      <h3>Franchise Partnership</h3>
+      <p>With 20+ years of industry expertise, robust backend support, and a powerful brand name,Max Searchs group offers you a turnkey opportunity to build a profitable future in one of India's fastest-growing sectors.</p>
+      <a href="#" class="link-accent">Partner With Us →</a>
+    </div>
+    <div class="pcard">
+      <div class="pcard-img"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=75" alt="Furniture"></div>
+      <h3>Max Searchs groupuxury and comfort with Max Searchs group' outdoor furniture, designed for all-weather durability and sophistication. As India's largest manufacturer, we create beautiful, handcrafted pieces perfect for hotels, resorts, and homes.</p>
+      <a href="http://www.loomcrafts.com" class="link-accent" target="_blank">Visit Website →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FAQ ====== -->
+<section class="faq sec">
+  <span class="sec-tag">Know More</span>
+  <h2 class="sec-title">Frequently Asked Questions</h2>
+  <div class="faq-grid">
+    <div>
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="faq-q">What is the cost of prefab modular homes in India?<span class="faq-icon">+</span></div>
+        <div class="faq-a">The cost of a prefab modular home in India depends on the size, design, and finishes. At Max Searchs group, our single-room prefab cottages and glamping pods start from just ₹7.25 lakh, while 1 BHK modular cottages range from ₹11.8 lakh to ₹28 lakh, 2 BHK prefab homes start at ₹23 lakh, and 3 & 4 BHK villas go up to ₹98 lakh.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="faq-q">How long does it take to build a prefab modular house?<span class="faq-icon">+</span></div>
+        <div class="faq-a">Unlike traditional construction which can take years, our prefab modular cottages are factory-made and ready to install in just 45–90 days depending on size. Single-room pods and studios are ready in 45 days, 1 & 2 BHK homes in 60 days, and large 3 & 4 BHK villas in 75–90 days.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="faq-q">Are prefab homes suitable for all locations and terrains?<span class="faq-icon">+</span></div>
+        <div class="faq-a">Yes, our modular homes are designed for all terrains in India — whether it's flat farmland, hilly slopes, coastal regions, or forest retreats. We've delivered projects in Goa, Kerala, Coorg, Shimla, Manali, Rishikesh, Lonavala, Jaipur, and Dehradun, as well as urban locations like Delhi NCR, Pune, Bangalore, Hyderabad, and Chennai.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="faq-q">Can prefab modular homes be customized?<span class="faq-icon">+</span></div>
+        <div class="faq-a">Absolutely. Every Loom Crafts home is custom-built to suit your land, lifestyle, and budget. You can choose from A-Frame, BarnHouse, ModAlpine, Vista, PodVilla, Cabana, and Concept Home designs, along with roofing styles, cladding materials, interiors, and finishes.</div>
+      </div>
+    </div>
+    <div>
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="faq-q">Do prefab modular cottages meet Indian building codes?<span class="faq-icon">+</span></div>
+        <div class="faq-a">Yes, all our prefab modular homes are designed in compliance with Indian standards (IS codes) for structural strength, wind load, seismic safety, and durability. Our homes are engineered with STAAD-Pro structural analysis and built to withstand earthquakes, heavy rains, and winds up to 180 km/hr.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="faq-q">Are prefab homes eco-friendly and energy-efficient?<span class="faq-icon">+</span></div>
+        <div class="faq-a">Yes, prefab construction is sustainable and environmentally friendly. Our modular cottages use recyclable materials, energy-efficient insulation, and zero-wastage construction methods. This reduces your carbon footprint while ensuring year-round comfort in hot, cold, or humid climates.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="faq-q">Do you make wooden homes?<span class="faq-icon">+</span></div>
+        <div class="faq-a">We deliver the wooden cottage look using wood-look claddings over an LGSF structure (termite-proof, weather-ready). This gives you the beauty and warmth of a wooden home without the maintenance concerns.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="faq-q">What warranty and lifespan do your prefab homes offer?<span class="faq-icon">+</span></div>
+        <div class="faq-a">Our prefab homes come with a 20-year warranty covering structure and leakage, and they have a design life of over 50 years with regular maintenance.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== BLOG ====== -->
+<section class="blog sec">
+  <span class="sec-tag">Latest from Max Searchs group</span>
+  <h2 class="sec-title">Blog Posts</h2>
+  <div class="blog-grid">
+    <a href="#" class="bcard">
+      <div class="bcard-img"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=500&q=75" alt=""></div>
+      <div class="bcard-body">
+        <div class="bcard-cat">Modular Construction</div>
+        <h3>Top Advantages of Modular Buildings: Exploring Modular Construction Benefits</h3>
+        <p>In recent years, modular construction has emerged as a transformative approach in the building industry, especially for luxury homes, resorts, and farmhouses...</p>
+      </div>
+    </a>
+    <a href="#" class="bcard">
+      <div class="bcard-img"><img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=500&q=75" alt=""></div>
+      <div class="bcard-body">
+        <div class="bcard-cat">Design Insights</div>
+        <h3>What Makes Modular Homes Unique? Exploring Modular Home Uniqueness</h3>
+        <p>Modular homes have been gaining significant attention in the real estate and construction sectors, especially among those looking for innovative housing solutions...</p>
+      </div>
+    </a>
+    <a href="#" class="bcard">
+      <div class="bcard-img"><img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=500&q=75" alt=""></div>
+      <div class="bcard-body">
+        <div class="bcard-cat">Luxury Living</div>
+        <h3>Why the Benefits of Luxury Prefab Homes Make Them the Future of Housing</h3>
+        <p>In recent years, the housing industry has witnessed a remarkable transformation. Among the most significant developments is the rise of prefab homes...</p>
+      </div>
+    </a>
+    <a href="#" class="bcard">
+      <div class="bcard-img"><img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=500&q=75" alt=""></div>
+      <div class="bcard-body">
+        <div class="bcard-cat">Lifestyle</div>
+        <h3>Defining Luxury in Modular Living: Exploring Luxury Modular Living Features</h3>
+        <p>In recent years, the concept of modular living has evolved significantly, blending innovation with comfort and style...</p>
+      </div>
+    </a>
+    <a href="#" class="bcard">
+      <div class="bcard-img"><img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=500&q=75" alt=""></div>
+      <div class="bcard-body">
+        <div class="bcard-cat">Industry</div>
+        <h3>Top Advantages of Modular Buildings: Exploring Modular Construction Benefits (Part 2)</h3>
+        <p>As we delve into the top advantages of modular buildings, it becomes clear why this innovative technique is gaining traction among developers...</p>
+      </div>
+    </a>
+    <a href="#" class="bcard">
+      <div class="bcard-img"><img src="https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=500&q=75" alt=""></div>
+      <div class="bcard-body">
+        <div class="bcard-cat">Resort Development</div>
+        <h3>Prefab Homes in India: A Complete Guide for Resort Developers</h3>
+        <p>Everything you need to know before investing in a prefab modular home or cottage for your resort or hospitality venture in India...</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ====== CITIES TICKER ====== -->
+<div class="cities-band">
+  <div class="cities-inner">
+    <span>Bangalore</span><span>•</span><span>Chennai</span><span>•</span>
+    <span>Mumbai</span><span>•</span><span>Delhi NCR</span><span>•</span>
+    <span>Pune</span><span>•</span><span>Goa</span><span>•</span>
+    <span>Jaipur</span><span>•</span><span>Hyderabad</span><span>•</span>
+    <span>Shimla</span><span>•</span><span>Manali</span><span>•</span>
+    <span>Rishikesh</span><span>•</span><span>Coorg</span><span>•</span>
+    <span>Lonavala</span><span>•</span><span>Dehradun</span><span>•</span>
+    <span>Guwahati</span><span>•</span><span>Nagpur</span><span>•</span>
+    <span>Nashik</span><span>•</span>
+    <!-- duplicate -->
+    <span>Bangalore</span><span>•</span><span>Chennai</span><span>•</span>
+    <span>Mumbai</span><span>•</span><span>Delhi NCR</span><span>•</span>
+    <span>Pune</span><span>•</span><span>Goa</span><span>•</span>
+    <span>Jaipur</span><span>•</span><span>Hyderabad</span><span>•</span>
+    <span>Shimla</span><span>•</span><span>Manali</span><span>•</span>
+    <span>Rishikesh</span><span>•</span><span>Coorg</span><span>•</span>
+    <span>Lonavala</span><span>•</span><span>Dehradun</span><span>•</span>
+    <span>Guwahati</span><span>•</span><span>Nagpur</span><span>•</span>
+    <span>Nashik</span><span>•</span>
+  </div>
+</div>
+
+<!-- ====== CONTACT ====== -->
+<section class="contact-sec" id="contact">
+  <div class="contact-info-col">
+    <span class="sec-tag" style="color:var(--accent)">Get in Touch</span>
+    <h2>Contact Us</h2>
+    <p style="color:rgba(255,255,255,0.5);font-size:0.88rem;line-height:1.7;margin-bottom:2.5rem;">We do projects all over the country, contact us today for more information.</p>
+    <div class="cdetail">
+      <div class="cicon">📞</div>
+      <div><small>Call / Whatsapp</small><p><a href="tel:+91 9318381209">+91 9318381209</a></p></div>
+    </div>
+    <div class="cdetail">
+      <div class="cicon">✉️</div>
+      <div><small>Email</small><p><a href="mailto:shivayadav@maxsearchs.com">shivayadav@maxsearchs.com</a></p></div>
+    </div>
+    <div class="cdetail">
+      <div class="cicon">📍</div>
+      <div><small>Head Office & Manufacturing Unit</small><p>6396 Meadow Wind Way
+Mills, WY 82604
+USA</p></div>
+    </div>
+    <div class="cdetail">
+      <div class="cicon">🏪</div>
+      <div><small>Experience Centers</small><p>Hyderabad | Nashik | Nagpur | Guwahati</p></div>
+    </div>
+    <!-- <div style="display:flex;gap:0.6rem;margin-top:2rem;">
+      <a href="https://www.instagram.com/loomcraftsmodularhomescottages/" class="fsoc-btn" target="_blank">📸</a>
+      <a href="https://www.facebook.com/loomcraftsmodularconstruction" class="fsoc-btn" target="_blank">👍</a>
+      <a href="https://www.linkedin.com/company/loomcraftsmodular/" class="fsoc-btn" target="_blank">💼</a>
+      <a href="https://www.youtube.com/@loomcraftsmodular" class="fsoc-btn" target="_blank">▶</a>
+    </div> -->
+  </div>
+  <!-- <div class="contact-map-col">
+    <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&q=80" alt="India Map">
+    <div class="contact-map-overlay">
+      <div class="map-pin">
+        <span>📍</span>
+        <p>6396 Meadow Wind Way
+Mills, WY 82604
+USA</p>
+        <p style="margin-top:0.5rem;font-size:0.7rem;opacity:0.6;">Head Office & Manufacturing Unit</p> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="footer-logo">Max Searchs group </span>
+      <p>Max Searchs group  Prefab Modular Homes & Cottages — India's most trusted range of prefabricated houses, modular villas, factory-made cottages, and glamping pods. 600+ homes delivered across 50+ cities in India.</p>
+      <!-- <div class="fsocial">
+        <a href="https://www.instagram.com/loomcraftsmodularhomescottages/" class="fsoc-btn" target="_blank">📸</a>
+        <a href="https://www.facebook.com/loomcraftsmodularconstruction" class="fsoc-btn" target="_blank">👍</a>
+        <a href="https://www.linkedin.com/company/loomcraftsmodular/" class="fsoc-btn" target="_blank">💼</a>
+        <a href="https://www.youtube.com/@loomcraftsmodular" class="fsoc-btn" target="_blank">▶</a>
+      </div> -->
+    </div>
+    <div class="fcol">
+      <h4>Designs</h4>
+      <ul>
+        <li><a href="#">1BHK Designs</a></li>
+        <li><a href="#">2BHK Designs</a></li>
+        <li><a href="#">3&4 BHK Designs</a></li>
+        <li><a href="#">Studio Cottage Designs</a></li>
+        <li><a href="#">Single Room Designs</a></li>
+        <li><a href="#">EcoEase Affordable Cabins</a></li>
+        <li><a href="#">Bathroom Pods</a></li>
+        <li><a href="#">Wooden Home Cottage</a></li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Partner with us</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Events</a></li>
+        <!-- <li><a href="#">Download Catalog</a></li> -->
+      </ul>
+    </div>
+    <div class="fcol">
+      <h4>Projects In</h4>
+      <ul>
+        <li><a href="#">Bangalore</a></li>
+        <li><a href="#">Chennai</a></li>
+        <li><a href="#">Mumbai</a></li>
+        <li><a href="#">Delhi NCR</a></li>
+        <li><a href="#">Pune</a></li>
+        <li><a href="#">Goa</a></li>
+        <li><a href="#">Jaipur</a></li>
+        <li><a href="#">Hyderabad</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Max Searchs group Pvt Ltd</p>
+    <p><a href="mailto:shivayadav@maxsearchs.com">shivayadav@maxsearchs.com</a></p>
+  </div>
+</footer>
+
+<script>
+// ===== HERO SLIDER =====
+let hCur = 0;
+const hSlides = document.getElementById('heroSlides');
+const hDots = document.querySelectorAll('.hdot');
+const hTotal = 4;
+
+function goSlide(n) {
+  hCur = (n + hTotal) % hTotal;
+  hSlides.style.transform = `translateX(-${hCur * 100}%)`;
+  hDots.forEach((d,i) => d.classList.toggle('active', i === hCur));
+}
+
+document.getElementById('hPrev').onclick = () => goSlide(hCur - 1);
+document.getElementById('hNext').onclick = () => goSlide(hCur + 1);
+const hAuto = setInterval(() => goSlide(hCur + 1), 5000);
+
+// ===== MEGA NAV SLIDER =====
+let msCur = 0;
+const msSlides = document.getElementById('megaSlides');
+const msLinks = document.querySelectorAll('.mega-link');
+const msPerPage = 3;
+const msTotal = 8;
+
+function goMsSlide(n) {
+  msCur = Math.max(0, Math.min(n, msTotal - msPerPage));
+  msSlides.style.transform = `translateX(-${msCur * (180 + 12)}px)`;
+  msLinks.forEach((l,i) => l.classList.toggle('active', i === msCur));
+}
+
+document.getElementById('msNext').onclick = () => goMsSlide(msCur + 1);
+document.getElementById('msPrev').onclick = () => goMsSlide(msCur - 1);
+
+msLinks.forEach((link, i) => {
+  link.addEventListener('mouseenter', () => goMsSlide(i));
+});
+
+// ===== FAQ =====
+function toggleFAQ(el) {
+  const isOpen = el.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+  if (!isOpen) el.classList.add('open');
+}
+
+// ===== ECOEASE IMAGE SWITCHER =====
+function switchEco(thumb, src) {
+  document.getElementById('ecoMainImg').src = src;
+  document.querySelectorAll('.eco-thumb').forEach(t => t.classList.remove('active'));
+  thumb.classList.add('active');
+}
+
+// ===== SCROLL ANIMATIONS =====
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.opacity = '1';
+      e.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.08 });
+
+document.querySelectorAll('.feat-card, .dcard, .tech-card, .bcard, .pcard, .stat-item, .proj-card, .hl-item').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(24px)';
+  el.style.transition = 'opacity 0.55s ease, transform 0.55s ease';
+  observer.observe(el);
+});
+</script>
+</body>
+</html>
